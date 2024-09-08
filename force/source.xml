@@ -2,17 +2,17 @@
 <elements>
 	<info>
 		<name>Source</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="source.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/source.xml" />
 		</update>
 	</info>
-	<element name="Jedi-Sith" type="Source" source="The Force" id="ID_SOURCE_THE_FORCE_JS">
+	<element name="The Force" type="Source" source="The Force" id="ID_SOURCE_THE_FORCE_JS">
 		<description>
 			<p>There are energy fields created by all living things, known as... The Force... Some people... wield this power, such as, the ancient Je'daii, but in more modern times, the Jedi, and the Sith.</p>
 		</description>
 		<setters>
 			<set name="abbreviation">The Force</set>
-			<set name="image">https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi.png</set>
+			<set name="image">https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/Jedi.png</set>
 			<set name="url">https://github.com/NSikimic/dnd-the-force/tree/master</set>
             <set name="author" abbreviation="AS" url="https://github.com/NSikimic">NSikimic</set>
 			<set name="release">20240821</set>
