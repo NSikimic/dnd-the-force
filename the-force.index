@@ -5,7 +5,7 @@
 		<description>The content for creating a Jedi or Sith.</description>
 		<author url="https://github.com/NSikimic">NSikimic</author>
 		<update version="0.1.0">
-			<file name="main.index" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/main.index" />
+			<file name="the-force.index" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/the-force.index" />
 		</update>
 	</info>
 	<files>
