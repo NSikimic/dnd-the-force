@@ -11,7 +11,7 @@
 	<files>
 		<!-- Class -->
 		<file name="source.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/source.xml" />
-		<file name="class-jedi-sith.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/main/class-jedi-sith.xml" />
+		<file name="class-jedi-sith.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/class-jedi-sith.xml" />
 
 		<!-- Sub - Class -->
 		<file name="jedi-consular.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi-consular.xml" />
