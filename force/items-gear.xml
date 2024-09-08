@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adventuring Gear</name>
+		<description></description>
+		<author url="https://github.com/NSikimic">NSikimic</author>
+		<update version="0.1.0">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/items-gear.xml" />
+		</update>
+	</info>
+
+	<element name="Jedi Robes" type="Item" source="The Force" id="ID_WOTC_PHB_ITEM_CLOTHES_JEDI_ROBES">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="4">4 lb.</set>
+		</setters>
+	</element>
+	<element name="Sith Robes" type="Item" source="The Force" id="ID_WOTC_PHB_ITEM_CLOTHES_SITH_ROBES">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="4">4 lb.</set>
+		</setters>
+	</element>
+	<element name="Gray Jedi Robes" type="Item" source="The Force" id="ID_WOTC_PHB_ITEM_CLOTHES_GRAY_JEDI_ROBES">
+		<description>
+			<p>A piece of Gray Robes with a hoddie worn by the Gray Jedi.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="4">4 lb.</set>
+		</setters>
+	</element>
+</elements>

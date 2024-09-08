@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="jedi-sentitel.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi-sentitel.xml" />
+		</update>
+	</info>
+
+	<element name="Jedi Sentinel" type="Archetype" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_JEDI_SITH_JEDI_SENTINEL">
+		<supports>Order Path</supports>
+		<description>
+			<p>Sentinels blended both schools of teaching and amplified them with a series of non-Force skills</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_STRIKE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EVASION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_RELIABLE_TALENT" />
+		</description>
+		<sheet>
+			<description>Sentinels blended both schools of teaching and amplified them with a series of non-Force skills</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EVASION" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_RELIABLE_TALENT" level="20" />
+		</rules>
+	</element>
+	<element name="Force Strike" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER</requirements>
+		<description>
+			<p>At 3rd level, you can use the force to more accurately aim your attacks. Before you know the outcome of the roll, you can expend 1 FP to add a +1 bonus to the roll. (You can spend more to increase the bonus, it is always a 1:1 ratio.)</p>
+		</description>
+		<sheet>
+			<description>You can use the force to more accurately aim your attacks. Before you know the outcome of the roll, you can expend 1 FP to add a +1 bonus to the roll. (You can spend more to increase the bonus, it is always a 1:1 ratio.)</description>
+		</sheet>
+	</element>
+	<element name="Evasion" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EVASION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION</requirements>
+		<description>
+			<p>Beginning at 6th level, You have advantage on saving throws against mind-manipulating effects.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against mind-manipulating effects.</description>
+		</sheet>
+	</element>
+	<element name="Additional Lightsaber Form" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM</requirements>
+		<description>
+			<p>At 10th level, you can choose a second option from the Lightsaber Form class feature.</p>
+		</description>
+		<sheet>
+			<description>You can choose a second option from the Lightsaber Form class feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Lightsaber Form" supports="Fighting Style,Jedi-Sith" />
+		</rules>
+	</element>
+	<element name="Reliable Talent" type="Class Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_RELIABLE_TALENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_RELIABLE_TALENT</requirements>
+		<description>
+			<p>By 20th level, whenever you make an ability check or saving throw that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check or saving throw that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_OATH_SPELLS" />
+	<element name="Vengeance Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER" />
+	<element name="Relentless Avenger Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION" />
+	<element name="Soul of Vengeance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM" />
+	<element name="Avenging Angel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_RELIABLE_TALENT" />
+</elements>

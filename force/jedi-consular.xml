@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="jedi-consular.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi-consular.xml" />
+		</update>
+	</info>
+
+	<element name="Jedi Consular" type="Archetype" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_JEDI_SITH_JEDI_CONSULAR">
+		<supports>Order Path</supports>
+		<description>
+			<p>Refraining from drawing their lightsabers except as a measure of last resort, Consulars spent a great deal of time studying the mysteries of the Force.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_DIPLOMAT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_ADEPT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_POWER_SPEED_UP" />
+		</description>
+		<sheet>
+			<description>Refraining from drawing their lightsabers except as a measure of last resort, Consulars spent a great deal of time studying the mysteries of the Force.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_DIPLOMAT" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_ADEPT" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_POWER_SPEED_UP" level="20" />
+		</rules>
+	</element>
+	<element name="Diplomat" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_DIPLOMAT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER</requirements>
+		<description>
+			<p>When you choose this archetype at 3rd level, you gain proficiency in the Persuasion and Insight skills. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Persuasion and Insight skills. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
+		</rules>
+	</element>
+	<element name="Force Adept" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_ADEPT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION</requirements>
+		<description>
+			<p>Starting at 6th level, all Force Powers have a -1 Force Point cost.</p>
+		</description>
+		<sheet>
+			<description>All Force Powers have a -1 Force Point cost.</description>
+		</sheet>
+	</element>
+	<element name="Additional Lightsaber Form" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM</requirements>
+		<description>
+			<p>At 10th level, you can choose a second option from the Lightsaber Form class feature.</p>
+		</description>
+		<sheet>
+			<description>You can choose a second option from the Lightsaber Form class feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Lightsaber Form" supports="Fighting Style,Jedi-Sith" />
+		</rules>
+	</element>
+	<element name="Power Speed Up" type="Class Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_POWER_SPEED_UP">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>At 20th level, when using a Force Power that's casting time is 1 Action, you can expend extra FP equal to the Force Power's normal FP cost to make the casting time 1 Bonus Action instead.</p>
+		</description>
+		<sheet>
+			<description>When using a Force Power that's casting time is 1 Action, you can expend extra FP equal to the Force Power's normal FP cost to make the casting time 1 Bonus Action instead.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_OATH_SPELLS" />
+	<element name="Vengeance Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER" />
+	<element name="Relentless Avenger Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION" />
+	<element name="Soul of Vengeance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM" />
+	<element name="Avenging Angel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_EXTRA_ATTACK" />
+</elements>

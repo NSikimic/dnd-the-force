@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="sith-sorcerer.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/sith-sorcerer.xml" />
+		</update>
+	</info>
+
+	<element name="Sith Sorcerer" type="Archetype" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_JEDI_SITH_SITH_SORCERER">
+		<supports>Order Path</supports>
+		<description>
+			<p>A Sith sorcerer or sorceress was an individual who was proficient in the arts of Sith magic, using spells, talismans, or incantations to focus the power of the dark side.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SITH_POWER" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SITH_POWER_IMPROVED" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_UNLIMITED_POWER" />
+		</description>
+		<sheet>
+			<description>A Sith sorcerer or sorceress was an individual who was proficient in the arts of Sith magic, using spells, talismans, or incantations to focus the power of the dark side.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SITH_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SITH_POWER_IMPROVED" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_UNLIMITED_POWER" level="20" />
+		</rules>
+	</element>
+	<element name="Sith Power" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SITH_POWER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SITH_POWER</requirements>
+		<description>
+			<p>At 3rd level, whenever you deal damage directly with a force power, you deal one more die of the power's type of damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you deal damage directly with a force power, you deal one more die of the power's type of damage.</description>
+		</sheet>
+	</element>
+	<element name="Sith Power Improved" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SITH_POWER_IMPROVED">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SITH_POWER_IMPROVED</requirements>
+		<description>
+			<p>At 6th level, whenever you attack using a force power, if it hits and deals damage, it also adds your proficiency modifier to the damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you attack using a force power, if it hits and deals damage, it also adds your proficiency modifier to the damage.</description>
+		</sheet>
+	</element>
+	<element name="Additional Lightsaber Form" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM</requirements>
+		<description>
+			<p>At 10th level, you can choose a second option from the Lightsaber Form class feature.</p>
+		</description>
+		<sheet>
+			<description>You can choose a second option from the Lightsaber Form class feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Lightsaber Form" supports="Fighting Style,Jedi-Sith" />
+		</rules>
+	</element>
+	<element name="Unlimited Power" type="Class Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_UNLIMITED_POWER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_UNLIMITED_POWER</requirements>
+		<description>
+			<p>At 20th level, whenever you kill a creature with a force power, you regain force points equal to your proficiency bonus</p>
+		</description>
+		<sheet>
+			<description>Whenever you kill a creature with a force power, you regain force points equal to your proficiency bonus</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_OATH_SPELLS" />
+	<element name="Vengeance Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SITH_POWER" />
+	<element name="Relentless Avenger Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SITH_POWER_IMPROVED" />
+	<element name="Soul of Vengeance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM" />
+	<element name="Avenging Angel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_UNLIMITED_POWER" />
+</elements>

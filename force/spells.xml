@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.1.0">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Battle Meditation" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_BATTLE_MEDITATION">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 5 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You use the Force to manipulate the outcome of coming events. For the duration, you, and up to 1 creatures of your choosing have a +2 bonus to their AC and attack roles. They are also given 1d6 + your Wisdom Modifier temporary hit points for the duration.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 4 FP used, you can target another creature</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Concentration, 8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Battle Precognition" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_BATTLE_PRECOGNITION">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You use the Force to look into the short term future, predicting what will happen. Upon activation, you gain a +2 bonus to all Saving Throws made. </p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For every extra 4 FP used, you can increase to bonus by 1.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 10 minutes</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Choke" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_CHOKE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Dark Side</p>
+			<p>You use the Force to concentrate the air around a creature's throat. The enemy rolls a Constitution Saving Throw against your Force Save DC, on a failure, they become restrained, cannot move and take 1d10 + your Wisdom Modifier Force damage at the end of each of your turns, on a success, nothing happens.</p> <p> At the end of their turn, they can reroll the Saving Throw.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 2 FP used, you can increase the damage by 1d10. You can use this attack as long as your hands can move into the shape of a choking grip.</p> 
+			<p> At level 16, you can use this power without the hand movement.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration. 3 rounds</set>
+			<set name="range">15 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Drain Life" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_DRAIN_LIFE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 5 FP</p>
+			<p><b>SIDE:</b> Dark Side</p>
+			<p>You shoot a bolt of dark Force energy at a creature from your palm as a spell attack. On a hit, they take 3d6 necrotic damage, and you heal half the damage dealt. The target rolls a Constitution saving throw, and on a failure they gain a level of exhaustion.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> Every extra 2 FP used, you can target another creature.</p>
+			<p> Every extra 2 FP used, you can add a 1d6 to the damage.</p>
+			<p> For an additional 2 FP, you can increase the range to 15ft.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fear" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FEAR">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Dark Side</p>
+			<p>You use pure dark Force energy around a creature, attempting to frightened them. The target must roll a Wisdom Saving Throw against your Force Save DC, on a failure, they are Frightened  for 1d4 rounds.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 3 FP used, you can target another creature.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Cloak" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_CLOAK">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>Yourself and everything worn or carried becomes invisible. If the target drops an item or removes it, the item is no longer invisible, and if the target tries to attack or cast a spell, the spell ends early. This cloak conceals a target's scent, however it does not cover up noises made by the target.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For stealth checks, this ability also adds a +3 to your roll.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration 1 hour</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Pull" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_PULL">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2/3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You concentrate the Force into a vacuum pulling an enemy in a direction towards you. They must make a Constitution Saving Throw against your Force Save DC, on a failure, they are pulled 20 feet, on a success they stay in place.</p> 
+			<p> If pulled into an object/structure, they take an additional 1d6 bludgeoning damage for every 10 feet it was pulled. </p>
+			<p>Using this on a creature within Melee Range causes them to be Grappled.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> Every extra 2 FP used, the target is pulled another 10 feet.</p>
+			<p> Upon being hit by an attack, you can use your reaction to spend 3 FP and pull a Large or smaller creature within 10 feet towards you. The creature must do a Constitution saving throw againts your Force Save DC. On fail, the pulled creature will take half of triggering attack's damage. A willing creature can choose to fail the saving throw</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action/reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Push" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_PUSH">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You concentrate the Force into a blast in front of you, a target in 60 feet range from you must make a Constitution Saving Throw against your Force Save DC, on failure the target is pushed back 20 feet, on success the target stays in place.</p> 
+			<p> If the target is slammed into an object/structure, it takes an additional 1d6 bludgeoning damage for every 10 feet it was pushed.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>Upon being hit by a melee attack, you can use your reaction to spend 2FP to channel the force into a repulsatory rebuke. The attacker must make a Constitution Saving Throw against your Force Save DC, on failure the target is pushed back 20ft and knocked prone.</p>
+			<p> For every extra 2 FP used, choose another target in a 60 feet range from you.</p>
+			<p> For every extra 2 FP used, all targets are pushed backward another 10 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action/reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Shield" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_SHIELD">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You concentrate the force around you, or an allied creature creating a weak barrier against attacks. The target gets a +3 bonus AC until the end of their next turn.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> Every 2 extra FP used, you gain an extra +1 bonus to AC.</p> 
+			<p> If used as a Reaction, you roll 2d10 + Wisdom Modifier to negate the damage of an attack or area effect, for the same cost as the bonus action. You roll an additional d10 per 2 FP spent.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 bonus action/reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Sight" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_SIGHT">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You gain the ability to see in the dark up to 60 feet.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For extra 2 FP you can also see through magical darkness.</p>
+			<p>For extra 2 FP you can also see through invisibility.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Awareness" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_AWARENESS">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 5 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>The Force enhances your awareness to danger or any disturbances within the 300 feet area. You gain have advantage on Perception skill checks while in darkness or dim-light, and advantage Insight skill checks that rely on the senses.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hours</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Speed" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_SPEED">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>Your speed is doubled, you have advantage on Dexterity saves.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>Spending an extra 2 points allows you to gain an + 2 AC.</p>
+			<p>Spending an extra 2 points allows you to gain an additional action on each of your turns. The action can be used to attack (one weapon attack only), dash, disengage, hide, or use an object.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Weapon" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_WEAPON">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 4 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You concentrate pure Force energy around a weapon that you are holding. The weapon this was cast on now deals an extra 1d4 damage of the chosen type and + 1 attack roll for the duration.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 3 FP used, you increase the extra damage by 1d4 and + 1 attack roll</p> 
+			<p> At 10th level, your understanding of the Force allows you to empower Unarmed Strikes with the Force, Additionally, your unarmed attacks empowered in this way can use your dex modifier in place of strength, for attack and damage.</p>
+			<p> The number of maximum dice is equal to 3</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, 1 hour</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Heal" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_HEAL">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Light Side</p>
+			<p>You concentrate the Force around you or another person, attempting to heal their wounds by speeding up the healing process. A target of your choice within 10 Feet of you recovers 2d6 + Wisdom Modifier hit points.</p> 
+			<p> This can also be used to mend and heal constructs. </p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>Every extra 2 FP used, the number of people affected increases by one.</p> 
+			<p>Every extra 2 FP will add a d6 to the roll.</p> 
+			<p> Having this ability allows you to Stabilize dying creatures as a Bonus Action for 0 FP.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action/bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Lightning" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_LIGHTNING">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 5 FP</p>
+			<p><b>SIDE:</b> Dark Side</p>
+			<p>You concentrate the Force into your fingertips, and shoot it out as jolts of lightning. Make an attack roll against a creature using your Force Attack Modifier, on a hit, you deal 3d8 + Wisdom Modifier Lightning damage.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 2 FP used, choose another target.</p>
+			<p> For every extra 2 FP used, damage increases by 1d8.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Lightsaber Throw" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_LIGHTSABER_THROW">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You throw your lightsaber at a target you can see within range. You make an ranged spell attack roll, on a hit you deal your weapon damage (fighting style/lightsaber form benefits apply).</p> 
+			<p> At the end of your turn, the lightsaber returns to your hand if it is free, or to your belt if your hand is not free.</p> 
+			<p> If not upcast, you can choose to spend an extra 4 FP upon throwing the lightsaber, imbuing it with sufficient force to potentially lodge the saber in their body for several rounds. Upon resolving the initial effects of this spell, the saber stays lodged inside the target, dealing an extra 2d6 damage of the lightsaber's damage type at the start of each of the target's turns. The target can make a Constitution saving throw at the end of each of their turn to remove it. Once removed, the lightsaber returns to you as normal.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every 2 extra FP used, you can choose another creature before your lightsaber returns to you.</p>
+			<p> For every 4 extra FP used, you can increase the damage by 2d6 of the lightsaber's damage type.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">80 / 320 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Lightsaber</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Mind Trick" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_MIND_TRICK">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You suggest an activity to a creature of your choice that you can see and that can hear and understand you. You're limited to two sentences. Creatures that can't be charmed are immune.</p> 
+			<p> The suggestion must be worded to make the action sound reasonable. Asking the creature to do something obviously self-harmful ends the spell. The target makes a Wisdom Saving Throw against your Force Save DC. On failure, it performs the action. The action can continue for the entire duration.</p> 
+			<p> If the activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do. You can also specify conditions that will trigger a special activity during the duration.</p> 
+			<p> If the condition isn't met before the spell expires, the activity isn't performed.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Repulse" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_REPULSE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You use the force around you, to push every creature 10 feet away from you. All creatures in a 10-foot radius must roll a Strength Saving Throw against your Force Save DC, on a failure, they take 3d6 Force damage and are pushed back 20 feet and are knocked prone,</p> 
+			<p> On a successful saving throw, the damage is halved, and they are not pushed back and stay on their feet.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every 2 extra FP used, the damage is increased by 1d6</p> 
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Stasis" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_STASIS">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 4 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You use the force to manipulate a creature's body, paralyzing them for a short time.</p> 
+			<p> Your target must roll a Constitution Saving Throw against your Force Save DC, on a failure, they are Paralyzed for the next three rounds, being able to move at the end of your turn in the third round.</p> 
+			<p> If they succeed, their speed is halved until the end of your next turn.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 3 FP used, you can target another creature.</p> 
+			<p> You must be 17th level or higher to use this power.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">3 rounds</set>
+			<set name="range">15 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Telekinesis" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_TELEKINESIS">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You concentrate the Force in your hands to manipulate the movement of an object or creature.</p> 
+			<p> You can lift an object of at most 500 pounds, and move it 20 feet using your action.</p> 
+			<p> For every extra 1 FP used, you can pick up one additioanl object, however the objects total weight must be less than the max limit.</p> 
+			<p> Every extra 2 FP used, the weight limit becomes another 250 pounds, and you can move it another 10 feet.</p>
+			<p>Alternatively you can lift a Large-sized creature or smaller, the target must make a Constitution Saveing Throw or be grappled and moved as an object</p> 
+			<p> A creature can repeat the check at the end of each of its turns, ending the effect on a success.</p> 
+			<p> If you are using this to retrieve your Lightsaber, it comes back to you immediately. </p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 3 FP the category of the affected target goes up by 1. </p> 
+			<p>At 14th level, you are able to use this ability without hand movements as long as you are conscious and aware of your surroundings.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action each movement</set>
+			<set name="duration">Concentration 1 minute</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Blind" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_BLIND">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Light Side</p>
+			<p>You mold the force into a bright light, blinding your enemies.</p> 
+			<p>Choose a target within a 30 foot radius, they make a Constitution saving throw or go blind for 10 rounds. </p>
+			<p>At the end of each of its turns, the target can make a Constitution saving throw. On success, the spell ends. </p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For every extra 2 FP choose one additional target. </p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Valor" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_VALOR">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 13 FP</p>
+			<p><b>SIDE:</b> Light Side</p>
+			<p>You focus the force into your body, boosting your physical capabilities.</p> 
+			<p> You gain a bonus to damage equal to 1d4+Wisdom modifier/2(rounded up) on all attacks, and can dash as a bonus action, as well as jump 2 times higher, and gain move speed equal to half your level rounded up.</p> 
+			<p> You also gain a bonus to hit equal to your proficiency bonus on all attacks, which stacks with Other sources of this effect. Your crit range becomes one higher, and you cannot roll a natural one on attack rolls, counting them instead as nat 2s.</p> 
+			<p>You may extend the duration of this power by spending more force points, increasing the duration by one minute per 2 FP spent.</p> 
+			<p> You may use dexterity, insted of strength, when determining jump height regaurdless of if this power is active or not. </p> 
+			<p>You must be Jedi level 20 to use this power.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action/bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Rage" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_RAGE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 13 FP</p>
+			<p><b>SIDE:</b> Dark Side</p>
+			<p>You use the force to gather your negative emotions, and channel them for power.</p> 
+			<p> You gain a bonus to damage rolls equal to 1d6+ your proficiency bonus, and may attack an addtional time per attack action.</p> 
+			<p> You also gain bonus speed equal to your character level, and a damage reduction of 3. you gain a bonus to hit equal to your proficiency bonus, You gain proficiency in Constitution and Strength saves, your crit range becomes one higher (20>19-20>18-20 etc), and you cannot roll a natural one on any attack, instead treating them instead as nat 2s.</p> 
+			<p> You may extend the duration of this power by spending more force points, increasing the duration by one minute per 2 FP spent.</p> 
+			<p> at the end of this period, make a dc 15 Constitution saving throw or suffer one level of exhaustion.</p> 
+			<p> You may use dexterity, instead of strength, when determining jump height regaurdless of if this power is active or not. </p> 
+			<p>You must be Sith level 20 to use this power.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action/bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Commune With The Force" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_COMMUNE_WITH_THE_FORCE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 7 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You briefly become one with the force and gain knowledge of the plane you are on. The power gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet.</p>
+			<p>You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:</p>
+				<p>• terrain and bodies of water</p>
+				<p>• prevalent plants, minerals, animals, or peoples</p>
+				<p>• powerful celestials, fey, fiends, elementals, or undead</p>
+				<p>• influence from other planes of existence</p>
+				<p>• buildings</p>
+			<p>For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Cleanse Mind" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_CLEANSE_MIND">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You use the force to undo a debilitating effect on one's mental state: charmed or frightened.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Confusion" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_CONFUSION">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 6 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>This power assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you use this power or be affected by it.</p>
+			<p>An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.</p>
+
+			d10 Behavior
+			<p>1 The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.</p>
+			<p>2–6 The creature doesn't move or take actions this turn.</p>
+			<p>7–8 The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.</p>
+			<p>9–10 The creature can act and move normally.</p>
+			<p>At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>You may use more force points to increase this power’s effects. For every 2 additional force points used, increase the radius by 5 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Disarm" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_DISARM">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You use the force to pull an item from an opponent's grasp. They must pass a Strength saving throw or the weapon hurls towards you.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> As part of this power, you may use 2 force point to catch the item in an open hand. Otherwise, it falls 5 feet toward you.</p>
+			<p>You may use more force points to increase this power’s effects. For every 1 additional force points used, you can increase the range by 5 feet.</p> 
+			<p> For 10 force points, you can use this on every creature within 10 feet of you.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Telepathy" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_TELEPATHY">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 4 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You use the force to telepathically communicate with a creature that is within the same plane as you. This power enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.</p> 
+			<p> The creature receiving the message gets a mental notification in the form of an odd or mystical feeling and the creature may choose to accept the message or continue to listen to the message.</p> 
+			<p>An unwilling creature must make a Wisdom saving throw against your Force Power save DC. On a success, they deny mental intrusion. On a failure, they receive the message anyway.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">unlimited</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Slow" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_SLOW">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 5 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this power for the duration.</p>
+			<p>An affected target's speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.</p>
+			<p>If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.</p>
+			<p>A creature affected by this power makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concetration, 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Recollection" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_RECOLLECTION">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>A mental technique of picking up impressions and traces of information in form of visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 50-foot cube), going back a number of hours equal to the number of minutes you spend concentrating on the spell.</p> 
+			<p> You learn about one significant event that happened during that period. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation.</p>
+			<p> This power allows the user to view events as if they were there, including the sights, sounds, and feelings, both emotional and physical, in the event that transpired.</p> 
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p> For extra 1FP, you can use this ability on an object.</p>
+			<p> For every extra 2FP, you increase the unit of time. (from minutes to hours, hours to days, days to months, months to years, years to centuries)</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Empathy" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_EMPATHY">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>For the duration, you feel the impressions and general emotional state of certain creatures. When you use this power and as your action on each turn until the power ends, you can focus your mind on any one creature that you can see within 30 feet of you.</p>
+			<p>You initially learn the surface emotion–confused, content, happy, nothing, and scared. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's feelings.</p>
+			<p> If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into what is causing this feeling. If it succeeds, the power ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the power ends.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>You can also use this power to detect the presence of the emotions of creatures you can't see. When you use this power or as your action during the duration, you can search for emotions within 30 feet of you.</p>
+			<p> The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. Once you detect a creature in this way, you can feel its emotions for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concetration, 1 minute</set>
+			<set name="range">self (30 feet)</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Dash Strike" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_DASH_STRIKE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 2 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>Using 10 ft of your movement you propel yourself forward by 30 ft, bypassing opportunities of attack by your enemy to make an attack upon your target, upon success, add a d4 to your lightsaber damage and place yourself anywhere that is within 5ft of your target. Your movement is halved after a Dash Strike until the end of your turn.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>Every 2 force points used beyond the first allows to add an additional d4 to your lightsaber damage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Locate" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_LOCATE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 6 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>Describe or name a creature that is familiar to you. You sense the direction to the creature’s location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.</p>
+			<p>The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close—within 30 feet—at least once.</p> 
+			<p> If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn’t locate the creature.</p>
+			<p>This spell can’t locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>Upon reaching level 16, you can cast this ability without using verbal components.</p>
+			<p>For extra 2 FP, you can describe an object instead.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 1 hour</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Clairvoyance" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_SCRYING">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 5 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees).</p>
+			<p>The sensor remains in place for the duration, and it can’t be attacked or otherwise interacted with.</p>
+			<p>When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space.</p>
+			<p>As your action, you can switch between seeing and hearing.</p>
+			<p>A creature that can see the sensor (such as a creature benefitting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For an additional 2 FP, you can gain the following effect:</p>
+			<p>You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you’re casting this spell, it can fail the saving throw voluntarily if it wants to be observed.</p>
+			<p>Knowledge Save Modifier</p>
+			<p>Secondhand (you have heard of the target) +5</p>
+			<p>Firsthand (you have met the target) +0</p>
+			<p>Familiar (you know the target well) −5</p>
+			<p>Connection Save Modifier</p>
+			<p>Likeness or picture −2</p>
+			<p>Possession or garment −4</p>
+			<p>Body part, lock of hair, bit of nail, or the like −10</p>
+			<p>On a successful save, the target isn’t affected, and you can’t use this spell against it again for 24 hours.</p>
+			<p>On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Concentration, 10 minutes</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Reverse Gravity" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_REVERSE_GRAVITY">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 10 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You manipulate the force to reverse gravity in a 50-foot-radius, 100-foot high cylinder centered on a point within range.</p>
+			<p>All creatures and objects that aren’t somehow anchored to the ground in the area fall upward and reach the top of the area when you cast this spell.</p>
+			<p>A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall. If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall.</p>
+			<p>If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration.</p>
+			<p>At the end of the duration, affected objects and creatures fall back down.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For every extra 2 FP, you can increase the cylinder height by 10 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="range">100 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Gravity Sinkhole" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_GRAVITY_SINKHOLE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 6 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You manipulate the force to create a 20-foot-radius sphere of crushing force that forms at a point you can see within range and tugs at the creatures there.</p>
+			<p>Each creature in the sphere must make a Constitution saving throw. On a failed save, the creature takes 5d10 force damage, and is pulled in a straight line toward the center of the sphere, ending in an unoccupied space as close to the center as possible (even if that space is in the air).</p>
+			<p>On a successful save, the creature takes half as much damage and isn't pulled.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For every extra 2 FP, you can increase the damage by 1d10.</p>
+			<p><b><i>Beginnig at level 11, you can cast a diffrent version of the spell:</i></b></p>
+			<p><i>For total of 9 FP</i>, you can cast the following spell:</p>
+			<p>You manifest a ravine of gravitational energy in a line originating from you that is 100 feet long and 5 feet wide. Each creature in that line must make a Constitution saving throw, taking 8d8 force damage on a failed save, or half as much damage on a successful one.</p>
+			<p>Each creature within 10 feet of the line but not in it must succeed on a Constitution saving throw or take 8d8 force damage and be pulled toward the line until the creature is in its area.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For every extra 2 FP, you can increase the damage by 1d8.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">100 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

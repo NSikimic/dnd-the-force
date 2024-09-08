@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<update version="0.1.0">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/items-weapons.xml" />
+		</update>
+	</info>
+	
+	<element name="Lightsaber" type="Weapon" source="The Force" id="ID_WOTC_PHB_WEAPON_LIGHTSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p>This item appears to be a longsword hilt. While grasping the hilt, you can cause a blade of pure light to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property.</p>
+			<p>Lightsaber deals lightning damage instead of slashing damage.</p>
+			<p>The sword's luminous blade emits dim light for 15 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="lightning">1d10</set>
+			<set name="versatile">1d12</set>
+			<set name="enhancement">0</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+</elements>

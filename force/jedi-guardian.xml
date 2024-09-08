@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="jedi-guardian.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi-guardian.xml" />
+		</update>
+	</info>
+
+	<element name="Jedi Guardian" type="Archetype" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_JEDI_SITH_JEDI_GUARDIAN">
+		<supports>Order Path</supports>
+		<description>
+			<p>Concentrating on martial training and combat,[3] Guardians engaged in combat more than either of the other two classes of Jedi.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_IMPROVED_CRITICAL" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_EVASION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EXTRA_ATTACK" />
+		</description>
+		<sheet>
+			<description>Concentrating on martial training and combat,[3] Guardians engaged in combat more than either of the other two classes of Jedi.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_IMPROVED_CRITICAL" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_EVASION" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EXTRA_ATTACK" level="20" />
+		</rules>
+	</element>
+	<element name="Improved Critical" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_IMPROVED_CRITICAL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER</requirements>
+		<description>
+			<p>Starting at 3rd level, your attacks score a critical hit on a roll of 19 or 20.</p>
+		</description>
+		<sheet>
+			<description>Your attacks score a critical hit on a roll of 19 or 20.</description>
+		</sheet>
+	</element>
+	<element name="Force Evasion" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_EVASION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION</requirements>
+		<description>
+			<p>At 6th level, when you are subjected to an effect that allows you to make a Dexterity saving throw for only half damage, you can spend 1 FP to take no damage if you succeed on the saving throw and take only half damage if it fails.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw for only half damage, you can spend 1 FP to take no damage if you succeed on the saving throw and take only half damage if it fails.</description>
+		</sheet>
+	</element>
+	<element name="Additional Lightsaber Form" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM</requirements>
+		<description>
+			<p>At 10th level, you can choose a second option from the Lightsaber Form class feature.</p>
+		</description>
+		<sheet>
+			<description>You can choose a second option from the Lightsaber Form class feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Lightsaber Form" supports="Fighting Style,Jedi-Sith" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 20th level, you can attack four times, instead of three, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack four times, instead of three, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="4" level="20" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_OATH_SPELLS" />
+	<element name="Vengeance Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER" />
+	<element name="Relentless Avenger Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION" />
+	<element name="Soul of Vengeance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM" />
+	<element name="Avenging Angel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_EXTRA_ATTACK" />
+</elements>

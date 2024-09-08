@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="sith-marauder.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/sith-marauder.xml" />
+		</update>
+	</info>
+
+	<element name="Sith Marauder" type="Archetype" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_JEDI_SITH_SITH_MARAUDER">
+		<supports>Order Path</supports>
+		<description>
+			<p>Sith Marauders were fueled by hatred, rage, and cruelty, and use it to defeat their opponents.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SAVAGE_ATTACKER" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_DEFLECTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EXTRA_ATTACK" />
+		</description>
+		<sheet>
+			<description>Sith Marauders were fueled by hatred, rage, and cruelty, and use it to defeat their opponents.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SAVAGE_ATTACKER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_DEFLECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EXTRA_ATTACK" level="20" />
+		</rules>
+	</element>
+	<element name="Savage Attacker" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_SAVAGE_ATTACKER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER</requirements>
+		<description>
+			<p>At 3rd level, when you attack an enemy with a weapon (The force power Lightsaber Throw counts), you deal 1d4 extra radiant damage, this damage die changes to 1d6 at 5th level, 1d8 at 9th level 1d10 at 13th level and 1d12 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you attack an enemy with a weapon (The force power Lightsaber Throw counts), you deal 1d4 extra radiant damage, this damage die changes to 1d6 at 5th level, 1d8 at 9th level 1d10 at 13th level and 1d12 at 17th level.</description>
+		</sheet>
+	</element>
+	<element name="Force Deflection" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_FORCE_DEFLECTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION</requirements>
+		<description>
+			<p>At 6th level, as a reaction decreases the damage of a ranged attack by 1d10 + Level + DEX. If damage is reduced to zero, you can spend 1 force point to bounce the projectile to a creature of your choice within 60 feet.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>As a reaction decreases the damage of a ranged attack by 1d10 + Level + DEX. If damage is reduced to zero, you can spend 1 force point to bounce the projectile to a creature of your choice within 60 feet.</description>
+		</sheet>
+	</element>
+	<element name="Additional Lightsaber Form" type="Archetype Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_ADDITIONAL_LIGHTSABER_FORM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM</requirements>
+		<description>
+			<p>At 10th level, you can choose a second option from the Lightsaber Form class feature.</p>
+		</description>
+		<sheet>
+			<description>You can choose a second option from the Lightsaber Form class feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Lightsaber Form" supports="Fighting Style,Jedi-Sith" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="The Force" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OP_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 20th level, you can attack four times, instead of three, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack four times, instead of three, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="4" level="20" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_OATH_SPELLS" />
+	<element name="Vengeance Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_SAVAGE_ATTACKER" />
+	<element name="Relentless Avenger Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_FORCE_DEFLECTION" />
+	<element name="Soul of Vengeance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_ADDITIONAL_LIGHTSABER_FORM" />
+	<element name="Avenging Angel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_VENGEANCE_EXTRA_ATTACK" />
+</elements>

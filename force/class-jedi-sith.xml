@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jedi-Sith</name>
+		<description>The Jedi-Sith class from the Force.</description>
+		<author url="https://github.com/NSikimic">NSikimic</author>
+		<update version="0.1.0">
+			<file name="class-jedi-sith.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/class-jedi-sith.xml" />
+		</update>
+	</info>
+
+	<element name="Jedi-Sith" type="Class" source="The Force" id="ID_WOTC_PHB_CLASS_JEDI_SITH">
+		<description>
+			<p>There are energy fields created by all living things, known as... The Force... Some people... wield this power, such as, the ancient Je'daii, but in more modern times, the Jedi, and the Sith.</p>
+			<p>When creating a Jedi/Sith, you must first ask yourself, will you be a Jedi? A Sith? Or a Grey Jedi? Next, why? What happened to your character that causes them to devote themselves to those teachings? When did you discover your force sensitivity?</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a Jedi/Sith quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Dexterity. Second, choose the Outlander background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a Jedi/Sith you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d10 per Jedi/Sith level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 10 + Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + Constitution modifier per Jedi/Sith level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Shields</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons, lightsabers( favoured weapon )</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Constitution</li>
+                <li><strong>Skills:</strong> Choose 4 from the following. Athletics, Acrobatics, Animal Handling, Arcana, Deception, History, Insight, Investigation, Medicine, Perception, Persuasion, Religion, Stealth</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> a melee martial weapon or <i>(b)</i> a ranged martial weapon or <i>(c)</i> a Lightsaber</li>
+				<li><i>(a)</i> Jedi robes or <i>(b)</i> Sith robes or <i>(c)</i> Gray robes </li>
+				<li><i>(a)</i> Jedi holocron or <i>(b)</i> Sith holocron</li>
+				<li><i>(a)</i> Explorer's Pack or <i>(b)</i> Scholar's Pack or <i>(c)</i> Dungeoneer's Pack</li>
+				<li>If you are using starting wealth, you have 150 gp in funds.</li>
+			</ul>
+			<h5 class="caption">THE JEDI-SITH TABLE</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Prof. bonus</td><td>Force Points</td><td>Force Powers</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>2</td><td>4</td><td>2</td><td class="left">Unarmoured Defence, Force Powers, Holocron</td></tr>
+				<tr><td> 2nd</td><td>2</td><td>6</td><td>3</td><td class="left">Force Jump</td></tr>
+				<tr><td> 3rd</td><td>2</td><td>14</td><td>4</td><td class="left">Order Path</td></tr>
+				<tr><td> 4th</td><td>2</td><td>17</td><td>5</td><td class="left">Ability Score Improvement, Lightsaber Form</td></tr>
+				<tr><td> 5th</td><td>3</td><td>27</td><td>6</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 6th</td><td>3</td><td>32</td><td>7</td><td class="left">Order Path Feature</td></tr>
+				<tr><td> 7th</td><td>3</td><td>38</td><td>8</td><td class="left">Force Telepathy, Channel the force</td></tr>
+				<tr><td> 8th</td><td>3</td><td>44</td><td>9</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>4</td><td>57</td><td>10</td><td class="left">Mind trick</td></tr>
+				<tr><td>10th</td><td>4</td><td>64</td><td>11</td><td class="left">Order Path Feature</td></tr>
+				<tr><td>11th</td><td>4</td><td>73</td><td>12</td><td class="left">Extra Attack</td></tr>
+				<tr><td>12th</td><td>4</td><td>73</td><td>13</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>5</td><td>83</td><td>14</td><td class="left">The Force Is With Me</td></tr>
+				<tr><td>14th</td><td>5</td><td>83</td><td>15</td><td class="left">Aura of Hope</td></tr>
+				<tr><td>15th</td><td>5</td><td>94</td><td>15</td><td class="left">Improved Unarmoured Defence</td></tr>
+				<tr><td>16th</td><td>5</td><td>94</td><td>16</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>6</td><td>107</td><td>16</td><td class="left">Power Mastery</td></tr>
+				<tr><td>18th</td><td>6</td><td>114</td><td>17</td><td class="left">One With The Force</td></tr>
+				<tr><td>19th</td><td>6</td><td>123</td><td>17</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>6</td><td>133</td><td>18</td><td class="left">Order Path Feature, Natural Speed</td></tr>
+			</table>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_UNARMORED_DEFENCE" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_POWERS" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_POINTS" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_HOLOCRON" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_JUMP" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ORDER_PATH" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_LIGHTSABER_FORM" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_TELEPATHY" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_CHANNEL_THE_FORCE" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_MIND_TRICK" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_THE_FORCE_IS_WITH_ME" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_AURA_OF_HOPE" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_IMPROVED_UNARMORED_DEFENCE" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_POWER_MASTERY" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_THE_ONE_WITH_THE_FORCE" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_NATURAL_SPEED" />
+		</description>
+		<sheet display="false">
+			<description>A force user.</description>
+		</sheet>
+		<setters>
+			<set name="short">A force user.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_JEDI_SITH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_JEDI_SITH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_JEDI_SITH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_JEDI_SITH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB_MULTICLASS_JEDI_SITH" />
+			<select type="Proficiency" name="Skill Proficiency (Jedi-Sith)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_STEALTH" number="4" requirements="!ID_WOTC_PHB_MULTICLASS_JEDI_SITH" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_UNARMORED_DEFENCE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_POWERS" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_POINTS" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_HOLOCRON" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_JUMP" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ORDER_PATH" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_LIGHTSABER_FORM" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ASI" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_TELEPATHY" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_CHANNEL_THE_FORCE" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ASI" level="8" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_MIND_TRICK" level="9" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_EXTRA_ATTACK" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ASI" level="12" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_THE_FORCE_IS_WITH_ME" level="13" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_AURA_OF_HOPE" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_IMPROVED_UNARMORED_DEFENCE" level="15" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ASI" level="16" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_POWER_MASTERY" level="17" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_THE_ONE_WITH_THE_FORCE" level="18" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ASI" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_NATURAL_SPEED" level="20" />
+		</rules>
+		<multiclass id="ID_WOTC_PHB_MULTICLASS_JEDI_SITH">
+			<prerequisite>Wisdom 20</prerequisite>
+			<requirements>([wis:20])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Unarmored Defence" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_UNARMORED_DEFENCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_DIVINE_SENSE</requirements>
+		<description>
+			<p>At 1st level, you have used your connection to the force to gain some precognition, knowing when your enemies will strike</p>
+			<p class="indent">While you are wearing no armor, your AC equals 10 + Dexterity modifier + your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor, your AC equals 10 + Dexterity modifier + your Wisdom modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="unarmored defence:natural armor" value="10" />
+			<stat name="unarmored defence:natural armor" value="dexterity:modifier" />
+			<stat name="unarmored defence:natural armor" value="wisdom:modifier" />
+			<stat name="ac:calculation" value="unarmored defence:natural armor" bonus="calculation" equipped="[armor:none]" />
+		</rules>
+	</element>
+	<element name="Force Powers" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_POWERS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_LAY_ON_HANDS</requirements>
+		<description>
+			<p>At 1st level, you have the ability to use something known as "The Force". You use it mainly through abilities called Force Powers. At 1st level you choose 2 Force Powers, gaining more as you level up. Using these Force Powers costs you Force Points (Shortened to FP) (Note, Force Powers that require one Action to activate, count as an Attack Action, meaning, for the price of 1 attack you can use the appropriate Force Ability without enhancing it, in addidion, you may expand one more attack in order to enhance the Force Ability - 1 Attack Action = Base Force Ability - 2 Attack Actions = Enhanced Force Ability )</p>
+			<p>In addition, the maximum amount you can spend Force Points to enhance the force power is equal to your level (including the base cost).</p>
+			<p class="indent"><b>Force Save DC</b> 8 + Wisdom modifier + proficiency bonus</p>
+			<p class="indent"><b>Force Attack Modifier</b> Wisdom modifier + proficiency bonus</p>
+		</description>
+		<sheet>
+			<description>At 1st level, you have the ability to use something known as "The Force". You use it mainly through abilities called Force Powers. At 1st level you choose 2 Force Powers, gaining more as you level up. Using these Force Powers costs you Force Points (Shortened to FP) (Note, Force Powers that require one Action to activate, count as an Attack Action, meaning, for the price of 1 attack you can use the appropriate Force Ability without enhancing it, in addidion, you may expand one more attack in order to enhance the Force Ability - 1 Attack Action = Base Force Ability - 2 Attack Actions = Enahnced Force Ability ). 
+			<p> In addition, the maximum amount you can spend Force Points to enhance the force power is equal to your level (including the base cost).</p>
+			<p><b> Max Enhanced Force Points: </b>{{jedi-sith:ehhanceforcepoins}}</p>
+			</description>
+		</sheet>
+		<spellcasting name="Jedi-Sith" ability="Wisdom" allowReplace="true">
+			<list>Jedi-Sith</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="2" level="1" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="2" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="3" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="4" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="5" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="6" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="7" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="8" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="9" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="10" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="11" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="12" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="13" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="14" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="16" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="18" />
+			<stat name="jedi-sith:spellcasting:slots:1" value="1" level="20" />
+
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="1" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="2" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="3" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="4" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="5" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="6" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="7" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="8" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="9" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="10" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="11" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="12" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="13" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="14" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="15" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="16" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="17" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="18" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="19" />
+			<stat name="jedi-sith:ehhanceforcepoins" value="1" level="20" />
+
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" number="1" spellcasting="Jedi-Sith"/>
+			<select type="Spell" name="Force Power" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" number="1" spellcasting="Jedi-Sith"/>
+		</rules>
+	</element>
+	<element name="Force Points" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_POINTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_FIGHTING_STYLE</requirements>
+		<description>
+			<p>At 1st level, you have a pool of Force Points (FP), of which you expend to use Force Powers and certain other abilities. You have a certain amount of Force Points shown on the Jedi/Sith Table. You regain all your Force Points after a long rest.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You have a pool of Force Points (FP), of which you expend to use Force Powers and certain other abilities. </p>
+				<br/>
+				<p>You regain all your Force Points after a long rest. </p>
+				<br/>
+				<p><b>Force Points: </b>{{jedi-sith:forcepoints}}</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="jedi-sith:forcepoints" value="4" level="1" />
+			<stat name="jedi-sith:forcepoints" value="2" level="2" />
+			<stat name="jedi-sith:forcepoints" value="8" level="3" />
+			<stat name="jedi-sith:forcepoints" value="3" level="4" />
+			<stat name="jedi-sith:forcepoints" value="10" level="5" />
+			<stat name="jedi-sith:forcepoints" value="5" level="6" />
+			<stat name="jedi-sith:forcepoints" value="6" level="7" />
+			<stat name="jedi-sith:forcepoints" value="6" level="8" />
+			<stat name="jedi-sith:forcepoints" value="13" level="9" />
+			<stat name="jedi-sith:forcepoints" value="7" level="10" />
+			<stat name="jedi-sith:forcepoints" value="9" level="11" />
+			<stat name="jedi-sith:forcepoints" value="0" level="12" />
+			<stat name="jedi-sith:forcepoints" value="10" level="13" />
+			<stat name="jedi-sith:forcepoints" value="0" level="14" />
+			<stat name="jedi-sith:forcepoints" value="11" level="15" />
+			<stat name="jedi-sith:forcepoints" value="0" level="16" />
+			<stat name="jedi-sith:forcepoints" value="13" level="17" />
+			<stat name="jedi-sith:forcepoints" value="7" level="18" />
+			<stat name="jedi-sith:forcepoints" value="9" level="19" />
+			<stat name="jedi-sith:forcepoints" value="10" level="20" />
+		</rules>
+	</element>
+	<element name="Holocron" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_HOLOCRON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_FIGHTING_STYLE</requirements>
+		<description>
+			<p>At first level, you have a Jedi or Sith's Holocron, you received this, from either luck, or, it was given to you by a Jedi or Sith. This Holocron shows you many things, such as, how to build a Lightsaber, and many of the Force's secrets. There are six kinds of Lightsabers. The cost shows how much gold you must spend in materials to craft the Lightsaber. It takes one hour of total concentration and 5 force point to create your lightsaber.</p>
+			<table class="holocron-weapons">
+				<thead>
+					<tr><td>Weapon</td><td>Damage</td><td>Properties</td><td>Weight</td></tr>
+				</thead>
+				<tr><td> Lightsaber</td><td>1d10 Magical Radient Damage</td><td>Finesse,Light,Versatile (1d12)</td><td>2 lbs.</td></tr>
+				<tr><td> Shortsaber</td><td>1d8 Magical Radient Damage</td><td>Finesse,Light</td><td>1.5 lbs.</td></tr>
+				<tr><td> Saberstaff</td><td>2d8 Magical Radient Damage</td><td>Finesse, Two-Handed</td><td>2.5 lbs.</td></tr>
+				<tr><td> Saberpike</td><td>1d8 Magical Radient Damage</td><td>Finesse,Reach,Versatile (1d12)</td><td>3 lbs.</td></tr>
+				<tr><td> Lightwhip</td><td>1d6 Magical Radient Damage</td><td>Finesse,Light,Reach</td><td>1.5 lbs.</td></tr>
+				<tr><td> Lightdagger</td><td>1d6 Magical Radient Damage</td><td>Finesse,Light,Thrown(20 - 60)</td><td>1 lbs.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You have a Jedi or Sith's Holocron. This Holocron shows you many things, such as, how to build a Lightsaber, and many of the Force's secrets. It takes one hour of total concentration and 5 force point to create your lightsaber.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Holocron" supports="Holocron,Jedi-Sith" />
+		</rules>
+	</element>
+	<element name="Force Jump" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_JUMP">
+		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_DIVINE_SMITE</requirements>
+		<description>
+			<p>At 2nd level, when you jump/high jump, you can spend 1 FP to double your jump distance for each PF used, if you used this feature, you do not take fall damage from that fall. You can also use this ability while falling to lessen your fall, so you take 0 fall damage. You cannot jump a distance greater than your base speed.</p>
+		</description>
+		<sheet>
+			<description>At 2nd level, when you jump/high jump, you can spend 1 FP to double your jump distance for each PF used, if you used this feature, you do not take fall damage from that fall. You can also use this ability while falling to lessen your fall, so you take 0 fall damage. You cannot jump a distance greater than your base speed.</description>
+		</sheet>
+	</element>
+	<element name="Order Path" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ORDER_PATH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_SACRED_OATH</requirements>
+		<description>
+			<p>At 3rd level, you chose an Order Path. Choose between (If your Holocron is that of a Jedi), Jedi Guardian, Jedi Consular, and Jedi Sentinel, or (If your Holocron is that of a Sith), Sith Sorcerer, Sith Marauder, and Sith Assassin, all detailed at the end of the class description.</p>
+			<p class="indent">Your choice grants you features at 3rd level and again at 6th, 10th, and 20th.</p>
+		</description>
+		<sheet display="false">
+			<description>Your path allows you to channel force energy to fuel magical effects.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype" name="Order Path" supports="Order Path" />
+		</rules>
+	</element>
+	<element name="Lightsaber Form" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_LIGHTSABER_FORM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_DIVINE_HEALTH</requirements>
+		<description>
+			<p>At 4th level, you choose one Lightsaber Form to focus on. To gain the benefit of any of these forms, you must be wielding a type of Lightsaber.</p>
+			<table class="lightsaber-form">
+				<thead>
+					<tr><td>Form</td><td>Description</td></tr>
+				</thead>
+				<tr><td> Shii-Cho</td><td>You practiced Form I: Shii-Cho, based on sweeping offensive movements, used to disarm an opponent. When you hit with a weapon attack, you can choose to forgo the damage, and instead disarm your opponent, their weapon falls 5 feet away from them, to their left or right (Your choice)</td></tr>
+				<tr><td> Makashi</td><td>You practiced Form II: Makashi, based on dueling, and strong quick attacks. When rolling for attack hit count both 19 and 20 as a critical hit.</td></tr>
+				<tr><td> Soresu</td><td>You practiced form III: Soresu, based on defense, often against projectiles. You gain a +1 bonus to your AC, and all ranged attack made against you have disadvantage, if the attack misses, the attack is reflected away from you.</td></tr>
+				<tr><td> Ataru</td><td>You practiced form IV: Ataru, based on fast, acrobatic attacks. Upon taking this form, you gain a +5 bonus to your movement speed. If you move 10 feet before attacking, the attack has advantage.</td></tr>
+				<tr><td> Shien/Djem So</td><td>You practiced form V: Shien/Djem So, a variant of form III. When being attacked, you can use your reaction to roll an attack check against the attacker's attack roll. If you fail, the attack applies normally, but if you succeed, you parry the attack, and if the enemy was using a melee weapon, you take an opportunity attack. If you succeeded, and the enemy was using a ranged weapon, you reflect the attack back onto the enemy.</td></tr>
+				<tr><td> Niman</td><td>You practiced form VI: Niman, a form based on mixing both force abilities, and quick agile attacks. If you used Force Push, Force Pull, or Force Repulse, you can take one attack directly after as a part of the same action, by expending 1 extra force point.</td></tr>
+				<tr><td> Juyo/Vaapad</td><td>You practiced form VII: Juyo/Vaapad, a form based on using your emotions to fuel your attacks, and deal more damage. This form gives you a +2 to all Lightsaber damage. This damage increases by 2 more at lvl 8, 12, 16 and 20.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Choose one Lightsaber Form to focus on. To gain the benefit of any of these forms, you must be wielding a type of Lightsaber.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Lightsaber Form" supports="Fighting Style,Jedi-Sith" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_ASI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Jedi-Sith 4)" supports="Improvement Option,Jedi-Sith,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Jedi-Sith 8)" supports="Improvement Option,Jedi-Sith,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Jedi-Sith 12)" supports="Improvement Option,Jedi-Sith,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Jedi-Sith 16)" supports="Improvement Option,Jedi-Sith,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Jedi-Sith 19)" supports="Improvement Option,Jedi-Sith,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="11" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Channel The Force" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_CHANNEL_THE_FORCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>At 7th level, you can channel the force by focusing on their emotions to feed the dark side, or focusing their mind to connect with the light side, the Sith or Jedi can replenish your reserve of force.</p>
+			<p>As an action, you can regain a number of points of force equal to your level, once used this feature cannot be used again until you finish a long rest.</p>
+			<p>Starting at lvl 13, you can use this feature once per short rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>As an action, you can regain a number of points of force equal to your level</description>
+			<description usage="1/Short Rest" level="13">As an action, you can regain a number of points of force equal to your level</description>
+		</sheet>
+		<rules>
+			<stat name="channel the force:count" value="1" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Force Telepathy" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_FORCE_TELEPATHY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>At 7th level, you can communicate telepathically with any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p>
+			<p>The creature can respond to you. You can communicate to multiple creatures at once by spending force points, you must spend 1 for every additional creature.</p>
+		</description>
+		<sheet>
+			<description>You can communicate telepathically with any creature you can see within 30 feet of you. You can communicate to multiple creatures at once by spending force points, you must spend 1 for every additional creature.</description>
+		</sheet>
+	</element>
+	<element name="Force Persuade - Mind Trick" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_MIND_TRICK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>At 9th level, whenever you make a Skill Check using Charisma, you can spend FP to give you a bonus to your roll. Every 1 FP you spend, you gain a +1 to your roll, you can use this before or after rolling, but it must be used before you know the outcome, or, if you already know the outcome, it costs 2FP for every +1 bonus.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Skill Check using Charisma, you can spend FP to give you a bonus to your roll. Every 1 FP you spend, you gain a +1 to your roll, you can use this before or after rolling, but it must be used before you know the outcome, or, if you already know the outcome, it costs 2FP for every +1 bonus.</description>
+		</sheet>
+	</element>
+	<element name="The Force Is With Me" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_THE_FORCE_IS_WITH_ME">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK</requirements>
+		<description>
+			<p>At 13th level, when you roll a Saving Throw, you can spend 2 FP to give yourself advantage on the roll. (This ability cannot stack with itself)</p>
+		</description>
+		<sheet>
+			<description>When you roll a Saving Throw, you can spend 2 FP to give yourself advantage on the roll. (This ability cannot stack with itself)</description>
+		</sheet>
+	</element>
+	<element name="Aura of Hope" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_AURA_OF_HOPE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_AURA_OF_PROTECTION</requirements>
+		<description>
+			<p>At 14th level, whenever you or a friendly creature within 15 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Wisdom modifier (with a minimum bonus of +1).</p>
+			<p class="indent">Your and your allies within this range can also not be Frightened. You must be conscious to grant this bonus.</p>
+		</description>
+		<sheet>
+			<description>Whenever you or a friendly creature within 15 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Wisdom modifier - {{aura of hope:save bonus}}. 
+			<p class="indent"> You and your allies within this range can also not be Frightened. You must be conscious to grant this bonus.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="aura of hope:range" value="15" bonus="base" />
+			<stat name="aura of hope:save bonus" value="1" bonus="base"/>
+			<stat name="aura of hope:save bonus" value="wisdom:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Improved Unarmored Defence" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_IMPROVED_UNARMORED_DEFENCE">
+		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_IMPROVED_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_IMPROVED_DIVINE_SMITE</requirements>
+		<description>
+			<p>At 15th level, you have used your connection to the force to gain some precognition, knowing when your enemies will strike, while you are wearing no armor, your AC equals 10 + your Dexterity modifier + your Wisdom modifier + half your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor, your AC equals 10 + your Dexterity modifier + your Wisdom modifier + half your proficiency bonus.</description>
+		</sheet>
+		<rules>
+			<stat name="unarmored defence:natural armor" value="proficiency:half" />
+			<stat name="ac:calculation" value="unarmored defence:natural armor" bonus="calculation" equipped="[armor:none]" />
+		</rules>
+	</element>
+	<element name="Power Mastery" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_POWER_MASTERY">
+		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_IMPROVED_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_IMPROVED_DIVINE_SMITE</requirements>
+		<description>
+			<p>At 17th level, you may choose one force power. You can use it without consuming Force Points, as if you had spend the minimum amount of force points on it. This power can be changed when you level up.</p>
+		</description>
+		<sheet>
+			<description>You may choose one force power. You can use it without consuming Force Points, as if you had spend the minimum amount of force points on it. This power can be changed when you level up.</description>
+		</sheet>
+	</element>
+	<element name="One With The Force" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_THE_ONE_WITH_THE_FORCE">
+		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_IMPROVED_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_IMPROVED_DIVINE_SMITE</requirements>
+		<description>
+			<p>At 18th level,you can project your mind to another location in the multiverse through force, as an action you can spend 10 FP you can project yourself to a location you know, while projected, your body remains still, meditating and fully aware of your surroundings.</p>
+			<p>While designed this way, you can see and hear as if you were there, you choose whether you can be seen or heard.</p>
+			<p>You can interact with the creature but cannot affect it or be affected by it in any way.</p>
+			<p>You can end the projection at any time as an action.</p>
+		</description>
+		<sheet>
+			<description>You can project your mind to another location in the multiverse through force, as an action you can spend 10 FP you can project yourself to a location you know, while projected, your body remains still, meditating and fully aware of your surroundings.
+			<p> While designed this way, you can see and hear as if you were there, you choose whether you can be seen or heard.</p>
+			<p> You can interact with the creature but cannot affect it or be affected by it in any way.</p>
+			<p> You can end the projection at any time as an action.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Natural Speed" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_JEDI_SITH_NATURAL_SPEED">
+		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_IMPROVED_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_IMPROVED_DIVINE_SMITE</requirements>
+		<description>
+			<p>At 20th level, your Speed increases by 10 feet, and you add your Wisdom modifier to initiative rolls.</p>
+			<p>You gain a +4 to your dexterity score, increasing the maximum to 24, or your previous maximum+4, whichever is higher. you can also take 2 actions on your turn</p>
+		</description>
+		<sheet>
+			<description>Speed increases by 10 feet, and you add your Wisdom modifier to initiative rolls. You gain a +4 to your dexterity score, increasing the maximum to 24, or your previous maximum+4, whichever is higher. you can also take 2 actions on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="10" bonus="base"/>
+			<stat name="initiative" value="wisdom:modifier" />
+			<stat name="dexterity" value="1" />
+			<stat name="dexterity" value="1" />
+			<stat name="dexterity" value="1" />
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<!-- Holocron -->
+	<element name="Light Side" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_HOLOCRON_LIGHT">
+		<supports>Holocron, Jedi-Sith</supports>
+		<description>
+			<p>There is no emotion, there is peace.
+				There is no ignorance, there is knowledge.
+				There is no passion, there is serenity.
+				There is no chaos, there is harmony.
+				There is no death, there is the Force.</p>
+		</description>
+		<sheet>
+			<description>There is no emotion, there is peace.
+				There is no ignorance, there is knowledge.
+				There is no passion, there is serenity.
+				There is no chaos, there is harmony.
+				There is no death, there is the Force.</description>
+		</sheet>
+	</element>
+	<element name="Dark Side" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_HOLOCRON_DARK">
+		<supports>Holocron, Jedi-Sith</supports>
+		<description>
+			<p>Peace is a lie, there is only passion.
+				Through passion, I gain strength.
+				Through strength, I gain power.
+				Through power, I gain victory.
+				Through victory, my chains are broken.
+				The Force shall free me.</p>
+		</description>
+		<sheet>
+			<description>Peace is a lie, there is only passion.
+				Through passion, I gain strength.
+				Through strength, I gain power.
+				Through power, I gain victory.
+				Through victory, my chains are broken.
+				The Force shall free me.</description>
+		</sheet>
+	</element>
+
+	<!-- Lightsaber Form -->
+	<element name="Shii-Cho" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_SHII_CHO">
+		<supports>Fighting Style, Jedi-Sith</supports>
+		<description>
+			<p>You practiced Form I: Shii-Cho, based on sweeping offensive movements, used to disarm an opponent. When you hit with a weapon attack, you can choose to forgo the damage, and instead disarm your opponent, their weapon falls 5 feet away from them, to their left or right (Your choice)</p>
+		</description>
+		<sheet>
+			<description>When you hit with a weapon attack, you can choose to forgo the damage, and instead disarm your opponent, their weapon falls 5 feet away from them, to their left or right (Your choice)</description>
+		</sheet>
+	</element>
+	<element name="Makashi" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_MAKASHI">
+		<supports>Fighting Style, Jedi-Sith</supports>
+		<description>
+			<p>You practiced Form II: Makashi, based on dueling, and strong quick attacks. When rolling for attack hit count both 19 and 20 as a critical hit.</p>
+		</description>
+		<sheet>
+			<description>When rolling for attack hit count both 19 and 20 as a critical hit.</description>
+		</sheet>
+	</element>
+	<element name="Soresu" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_SORESU">
+		<supports>Fighting Style, Jedi-Sith</supports>
+		<description>
+			<p>You practiced form III: Soresu, based on defense, often against projectiles. You gain a +1 bonus to your AC, and all ranged attack made against you have disadvantage, if miss the attack, the attack is reflected away from you.</p>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to your AC, and all ranged attack made against you have disadvantage, if miss the attack, the attack is reflected away from you.</description>
+		</sheet>
+	</element>
+	<element name="Ataru" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_ATARU">
+		<supports>Fighting Style, Jedi-Sith</supports>
+		<description>
+			<p>You practiced form IV: Ataru, based on fast, acrobatic attacks. Upon taking this form, you gain a +5 bonus to your movement speed. If you move 10 feet before attacking, the attack has advantage.</p>
+		</description>
+		<sheet>
+			<description>Upon taking this form, you gain a +5 bonus to your movement speed. If you move 10 feet before attacking, the attack has advantage.</description>
+		</sheet>
+	</element>
+	<element name="Shien/Djem So" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_PROTECTION">
+		<supports>Fighting Style, Jedi-Sith</supports>
+		<description>
+			<p>You practiced form V: Shien/Djem So, a variant of form III. When being attacked, you can use your reaction to roll an attack check against the attacker's attack roll. If you fail, the attack applies normally, but if you succeed, you parry the attack, and if the enemy was using a melee weapon, you take an opportunity attack. If you succeeded, and the enemy was using a ranged weapon, you reflect the attack back onto the enemy.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When being attacked, you can use your reaction to roll an attack check against the attacker's attack roll. If you fail, the attack applies normally, but if you succeed, you parry the attack, and if the enemy was using a melee weapon, you take an opportunity attack. If you succeeded, and the enemy was using a ranged weapon, you reflect the attack back onto the enemy.</description>
+		</sheet>
+	</element>
+	<element name="Niman" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_TWOWEAPON_FIGHTING">
+		<supports>Fighting Style, Jedi-Sith</supports>
+		<description>
+			<p>You practiced form VI: Niman, a form based on mixing both force abilities, and quick agile attacks. If you used Force Push, Force Pull, or Force Repulse, you can take one attack directly after as a part of the same action, by expending 1 extra force point.</p>
+		</description>
+		<sheet>
+			<description>If you used Force Push, Force Pull, or Force Repulse, you can take one attack directly after as a part of the same action, by expending 1 extra force point.</description>
+		</sheet>
+	</element>
+	<element name="Juyo/Vaapad" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_TWOWEAPON_FIGHTING">
+		<supports>Fighting Style, Jedi-Sith</supports>
+		<description>
+			<p>You practiced form VII: Juyo/Vaapad, a form based on using your emotions to fuel your attacks, and deal more damage. This form gives you a +2 to all Lightsaber damage. This damage increases by 2 more at lvl 8, 12, 16 and 20.</p>
+		</description>
+		<sheet>
+			<description>This form gives you a +2 to all Lightsaber damage. This damage increases by 2 more at lvl 8, 12, 16 and 20.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Divine Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_DIVINE_SENSE" />
+	<element name="Lay on Hands Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_LAY_ON_HANDS" />
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_FIGHTING_STYLE" />
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_SPELLCASTING" />
+	<element name="Divine Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_DIVINE_SMITE" />
+	<element name="Divine Health Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_DIVINE_HEALTH" />
+	<element name="Sacred Oath Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_SACRED_OATH" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_EXTRA_ATTACK" />
+	<element name="Aura of Protection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_AURA_OF_PROTECTION" />
+	<element name="Aura of Courage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_AURA_OF_COURAGE" />
+	<element name="Improved Divine Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_IMPROVED_DIVINE_SMITE" />
+	<element name="Cleansing Touch Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JEDI_SITH_CLEANSING_TOUCH" />
+</elements>

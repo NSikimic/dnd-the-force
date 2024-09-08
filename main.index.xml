@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>The Force - Jedi/Sith</name>
+		<description>The content for creating a Jedi or Sith.</description>
+		<author url="https://github.com/NSikimic">NSikimic</author>
+		<update version="0.1.0">
+			<file name="main.index" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/main.index" />
+		</update>
+	</info>
+	<files>
+		<!-- Class -->
+		<file name="source.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/source.xml" />
+		<file name="class-jedi-sith.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/main/class-jedi-sith.xml" />
+
+		<!-- Sub - Class -->
+		<file name="jedi-consular.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi-consular.xml" />
+		<file name="jedi-guardian.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi-guardian.xml" />
+		<file name="jedi-sentitel.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/jedi-sentitel.xml" />
+		<file name="sith-assassin.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/sith-assassin.xml" />
+		<file name="sith-marauder.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/sith-marauder.xml" />
+		<file name="sith-sorcerer.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/sith-sorcerer.xml" />
+
+		<!-- Items -->
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/items-weapons.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/items-gear.xml" />
+
+		<!-- Spells -->
+		<file name="spells.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/spells.xml" />
+	</files>
+</index>
