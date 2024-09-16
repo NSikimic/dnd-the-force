@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.1.0">
+		<update version="0.1.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/spells.xml" />
 		</update>
 	</info>
@@ -821,7 +821,7 @@
 			<p><b>SIDE:</b> Universal</p>
 			<p>For the duration, you feel the impressions and general emotional state of certain creatures. When you use this power and as your action on each turn until the power ends, you can focus your mind on any one creature that you can see within 30 feet of you.</p>
 			<p>You initially learn the surface emotion–confused, content, happy, nothing, and scared. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's feelings.</p>
-			<p> If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into what is causing this feeling. If it succeeds, the power ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the power ends.</p>
+			<p> If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into what is causing this feeling. If it succeeds, the power ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Wisdom check; if it succeeds, the power ends.</p>
 			<p><b><i>At Higher Levels.</i></b></p>
 			<p>You can also use this power to detect the presence of the emotions of creatures you can't see. When you use this power or as your action during the duration, you can search for emotions within 30 feet of you.</p>
 			<p> The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. Once you detect a creature in this way, you can feel its emotions for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p>
@@ -991,6 +991,35 @@
 			<set name="range">100 feet</set>
 			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Augury" type="Spell" source="The Force" id="ID_TF_FORCE_SPELL_FORCE_AUGURY">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 3 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You manipulate the force to receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes.</p>
+			<p>The DM chooses from the following possible omens:</p>
+			<p>Weal, for good results</p>
+			<p>Woe, for bad results</p>
+			<p>Weal and woe, for both good and bad results</p>
+			<p>The spell doesn’t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion. </p>
+			<p>If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
