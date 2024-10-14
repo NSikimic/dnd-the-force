@@ -1027,4 +1027,33 @@
 		</setters>
 	</element>
 
+	<element name="Mental Prison" type="Spell" source="The Force" id="ID_TF_FORCE_SPELL_MENTAL_PRISON">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 9 FP</p>
+			<p><b>SIDE:</b> Dark</p>
+			<p>You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. The target succeeds automatically if it is immune to being charmed.</p>
+			<p>On a successful save, the target takes 5d10 psychic damage, and the spell ends.</p>
+			<p>On a failed save, the target takes 5d10 psychic damage, and you make the area immediately around the target’s space appear dangerous to it in some way. You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth.</p>
+			<p>Whatever form the illusion takes, the target can’t see or hear anything beyond it and is restrained for the spell’s duration.</p>
+			<p>If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes 10d10 psychic damage, and the spell ends.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>At level 17, you can cast this without somatic components.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 </elements>
