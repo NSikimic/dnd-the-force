@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/spells.xml" />
 		</update>
 	</info>
