@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/spells.xml" />
 		</update>
 	</info>
@@ -822,9 +822,10 @@
 			<p>For the duration, you feel the impressions and general emotional state of certain creatures. When you use this power and as your action on each turn until the power ends, you can focus your mind on any one creature that you can see within 30 feet of you.</p>
 			<p>You initially learn the surface emotion–confused, content, happy, nothing, and scared. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's feelings.</p>
 			<p> If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into what is causing this feeling. If it succeeds, the power ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Wisdom check; if it succeeds, the power ends.</p>
-			<p><b><i>At Higher Levels.</i></b></p>
 			<p>You can also use this power to detect the presence of the emotions of creatures you can't see. When you use this power or as your action during the duration, you can search for emotions within 30 feet of you.</p>
 			<p> The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. Once you detect a creature in this way, you can feel its emotions for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For every extra 2 FP, you can increase the range by 10 feet.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
