@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/spells.xml" />
 		</update>
 	</info>
@@ -878,8 +878,7 @@
 			<p> If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn’t locate the creature.</p>
 			<p>This spell can’t locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.</p>
 			<p><b><i>At Higher Levels.</i></b></p>
-			<p>Upon reaching level 16, you can cast this ability without using verbal components.</p>
-			<p>For extra 2 FP, you can describe an object instead.</p>
+			<p>Upon reaching level 16, you can cast this ability without using verbal components. And you can describe an object instead.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -897,18 +896,11 @@
 		</setters>
 	</element>
 
-	<element name="Force Clairvoyance" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_SCRYING">
+	<element name="Force Scrying" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_SCRYING">
 		<supports>Jedi-Sith, Spell Saving Throw</supports>
 		<description>
 			<p><b>FORCE POINTS:</b> 5 FP</p>
 			<p><b>SIDE:</b> Universal</p>
-			<p>You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees).</p>
-			<p>The sensor remains in place for the duration, and it can’t be attacked or otherwise interacted with.</p>
-			<p>When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space.</p>
-			<p>As your action, you can switch between seeing and hearing.</p>
-			<p>A creature that can see the sensor (such as a creature benefitting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist.</p>
-			<p><b><i>At Higher Levels.</i></b></p>
-			<p>For an additional 2 FP, you can gain the following effect:</p>
 			<p>You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you’re casting this spell, it can fail the saving throw voluntarily if it wants to be observed.</p>
 			<p>Knowledge Save Modifier</p>
 			<p>Secondhand (you have heard of the target) +5</p>
@@ -920,6 +912,33 @@
 			<p>Body part, lock of hair, bit of nail, or the like −10</p>
 			<p>On a successful save, the target isn’t affected, and you can’t use this spell against it again for 24 hours.</p>
 			<p>On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Concentration, 10 minutes</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Clairvoyance" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_CLAIRVOYANCE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 5 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees).</p>
+			<p>The sensor remains in place for the duration, and it can’t be attacked or otherwise interacted with.</p>
+			<p>When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space.</p>
+			<p>As your action, you can switch between seeing and hearing.</p>
+			<p>A creature that can see the sensor (such as a creature benefitting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -979,6 +998,32 @@
 			<p><b><i>Beginnig at level 11, you can cast a diffrent version of the spell:</i></b></p>
 			<p><i>For total of 9 FP</i>, you can cast the following spell:</p>
 			<p>You manifest a ravine of gravitational energy in a line originating from you that is 100 feet long and 5 feet wide. Each creature in that line must make a Constitution saving throw, taking 8d8 force damage on a failed save, or half as much damage on a successful one.</p>
+			<p>Each creature within 10 feet of the line but not in it must succeed on a Constitution saving throw or take 8d8 force damage and be pulled toward the line until the creature is in its area.</p>
+			<p><b><i>At Higher Levels.</i></b></p>
+			<p>For every extra 2 FP, you can increase the damage by 1d8.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">100 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Force Gravity Line" type="Spell" source="The Force" id="ID_PHB_FORCE_SPELL_FORCE_GRAVITY_LINE">
+		<supports>Jedi-Sith, Spell Saving Throw</supports>
+		<description>
+			<p><b>FORCE POINTS:</b> 9 FP</p>
+			<p><b>SIDE:</b> Universal</p>
+			<p>You manifest a ravine of gravitational force energy in a line originating from you that is 100 feet long and 5 feet wide. Each creature in that line must make a Constitution saving throw, taking 8d8 force damage on a failed save, or half as much damage on a successful one.</p>
 			<p>Each creature within 10 feet of the line but not in it must succeed on a Constitution saving throw or take 8d8 force damage and be pulled toward the line until the creature is in its area.</p>
 			<p><b><i>At Higher Levels.</i></b></p>
 			<p>For every extra 2 FP, you can increase the damage by 1d8.</p>
