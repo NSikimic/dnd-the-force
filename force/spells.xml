@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/spells.xml" />
 		</update>
 	</info>
@@ -819,11 +819,12 @@
 		<description>
 			<p><b>FORCE POINTS:</b> 3 FP</p>
 			<p><b>SIDE:</b> Universal</p>
-			<p>For the duration, you feel the impressions and general emotional state of certain creatures. When you use this power and as your action on each turn until the power ends, you can focus your mind on any one creature that you can see within 30 feet of you.</p>
-			<p>You initially learn the surface emotion–confused, content, happy, nothing, and scared. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's feelings.</p>
-			<p> If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into what is causing this feeling. If it succeeds, the power ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Wisdom check; if it succeeds, the power ends.</p>
-			<p>You can also use this power to detect the presence of the emotions of creatures you can't see. When you use this power or as your action during the duration, you can search for emotions within 30 feet of you.</p>
-			<p> The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. Once you detect a creature in this way, you can feel its emotions for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p>
+			<p>For the duration, you can read the thoughts of certain creatures and you feel the impressions and general emotional state of certain creatures. When you use this power and as your action on each turn until the power ends, you can focus your mind on any one creature that you can see within 30 feet of you.</p>
+			<p>You initially learn the surface thoughts and emotions of the creature - what is most on its mind in that moment. As an action, you can either shift your attention to another creature's mind or attempt to probe deeper into the same creature's mind and feelings.</p>
+			<p> If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature’s thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.</p>
+			<p>Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.</p>
+			<p>You can also use this spell to detect the presence of emotions and thinking creatures you can’t see. When you cast the spell or as your action during the duration, you can search for thoughts and emotions within 30 feet of you.</p>
+			<p> The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. Once you detect a creature in this way, you can feel its thoughts and emotions for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p>
 			<p><b><i>At Higher Levels.</i></b></p>
 			<p>For every extra 2 FP, you can increase the range by 10 feet.</p>
 		</description>
@@ -995,12 +996,6 @@
 			<p>On a successful save, the creature takes half as much damage and isn't pulled.</p>
 			<p><b><i>At Higher Levels.</i></b></p>
 			<p>For every extra 2 FP, you can increase the damage by 1d10.</p>
-			<p><b><i>Beginnig at level 11, you can cast a diffrent version of the spell:</i></b></p>
-			<p><i>For total of 9 FP</i>, you can cast the following spell:</p>
-			<p>You manifest a ravine of gravitational energy in a line originating from you that is 100 feet long and 5 feet wide. Each creature in that line must make a Constitution saving throw, taking 8d8 force damage on a failed save, or half as much damage on a successful one.</p>
-			<p>Each creature within 10 feet of the line but not in it must succeed on a Constitution saving throw or take 8d8 force damage and be pulled toward the line until the creature is in its area.</p>
-			<p><b><i>At Higher Levels.</i></b></p>
-			<p>For every extra 2 FP, you can increase the damage by 1d8.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
