@@ -4,7 +4,7 @@
 		<name>Jedi-Sith</name>
 		<description>The Jedi-Sith class from the Force.</description>
 		<author url="https://github.com/NSikimic">NSikimic</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="class-jedi-sith.xml" url="https://raw.githubusercontent.com/NSikimic/dnd-the-force/master/force/class-jedi-sith.xml" />
 		</update>
 	</info>
@@ -557,6 +557,9 @@
 		<sheet>
 			<description>Upon taking this form, you gain a +5 bonus to your movement speed. If you move 10 feet before attacking, the attack has advantage.</description>
 		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="5" bonus="base"/>
+		</rules>
 	</element>
 	<element name="Shien/Djem So" type="Class Feature" source="The Force" id="ID_WOTC_PHB_CLASS_FEATURE_LIGHTSABER_FORM_PROTECTION">
 		<supports>Fighting Style, Jedi-Sith</supports>
